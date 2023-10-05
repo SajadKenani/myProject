@@ -157,7 +157,7 @@ for (let i = 0; i < myMessagesDataSection.length; i++){
         // Create the <img> element with class "myStartsImage-img" and src attribute
         var imgElement = document.createElement('img');
         imgElement.className = 'myStartsImage-img';
-        imgElement.src = '/Frontend/src/HomePage/myImages/Star.png';
+        imgElement.src = 'myImages/Star.png';
         imgElement.title = 'arab'; // Set the title attribute
         
         // Append the <a> and <img> elements to a container element (e.g., a div)
