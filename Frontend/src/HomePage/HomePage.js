@@ -1,4 +1,4 @@
-import { myData, myMessagesDataSection} from "myProject/Frontend/src/HomePage/MyData.js";
+import { myData, myMessagesDataSection} from "../myProject/Frontend/src/HomePage/MyData.js";
 
 addEventListener("DOMContentLoaded", function() {
 
