@@ -77,7 +77,7 @@ addEventListener("DOMContentLoaded", function() {
 
     let myStartsRateImage = this.document.createElement("img");
     myStartsRateImage.classList = "myStartsImage-img";
-    myStartsRateImage.src = "/Frontend/src/HomePage/myImages/Star.png";
+    myStartsRateImage.src = "myImages/Star.png";
     myStartsRateImage.style = "margin-top: 15px"
     myStartsRateImage.id = j;
 
