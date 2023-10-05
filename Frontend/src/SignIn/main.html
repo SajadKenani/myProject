@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Tajawal' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+
+    <link href="/Frontend/main.css" rel="stylesheet">
+
+    <title>Sign In</title>
+</head>
+<body>
+
+    <div class="Password_Sucsessfuly_Changed  form--hidden">
+        <div class="myInnerSucsPassDiv-div">
+
+            <div class="circleChangedPass-div">
+                <svg class="trueSign-svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                    <style>svg{fill:#ffffff; width: 25px; height: 25px;}</style>
+                    <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                </svg>
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <p class="passChanged-para"> !تم تغيير كلمة المرور بنجاح </p>
+            </div>
+
+            <button class="myButton-btn" style="width: 90%; display: grid; margin: 0 auto; margin-top: 10px;" > الانتقال الى الصفحة الرئيسية </button>
+
+        </div>
+        
+    </div>
+
+    <!-- Background section -->
+  <div class="myUpperMainDiv-div"></div>
+  <div class="myTraingularMainDiv-div"></div>
+  
+  <div class="OuterTraingular-div">
+       <div class="innterTraingular-div"></div>
+       <div class="innterSecondaryTraingular-div"></div>
+  </div>
+  <div class="myLowerMainDiv-div">
+
+<!-- Content Section -->
+
+    <div class="myOuterImage-div">
+        <img class="myMainLogo-img" src="/Frontend/src/SvgAndImg/Icon.png"></img> 
+    </div>
+
+    <div class="myOuterPara-div">
+        <p class="myMainPara-para">Dhad</p>
+    </div>
+
+
+<!-- The User Forgot The Password -->
+
+<form class="MainSignInForm ">
+    
+    <div class="middlePart-div">
+        <!-- Paragraph -->
+        <p class="myMiddleMainPara-para"> تسجيل الدخول </p>
+        <p class="myMiddlePara-para"> مرحبًا بك في ضاد للخدمات! ابدأ رحلتك البحثية اليوم واكتشف عالم المعرفة معنا </p>
+        
+        <div class="myMainMiddleField-div">
+  
+        <p class="myNamePara-para"> البريد الالكتروني </p>
+        <!-- The user will insert their email here -->
+        <input class="myEmailInput-input " type="email" placeholder="you@example.com" required></input> 
+         <!-- Users Info Errors -->
+         <p class="myPasswordWarning-para hiddenError" id="emailExistanceError"> لايمكن ترك الحقل فارغ </p>
+         <p class="myPasswordError-para hiddenError" id="emailLengthError"> يرجى ادخال بريد الكتروني ملائم </p>
+   
+        <p class="myNamePara-para"> كلمة المرور </p>
+         <!-- The user will insert their password  here -->
+         <div style="display: flex;">
+            <button class="myShowPasswordButton-btn"> 
+                <img id="myPasswordImage-img" style="width: 25px; margin-top: 7px;" src="/Frontend/src/SvgAndImg/eye-closed_svgrepo.com.png" /> 
+            </button>
+            <input class="myPasswordInput-input" type="password" placeholder="كلمة المرور" required></input>
+        </div>
+         <!-- Users Info Errors -->
+         <p class="myPasswordWarning-para hiddenError" id="passwordExistanceError"> لايمكن ترك الحقل فارغ </p>
+         <p class="myPasswordError-para hiddenError" id="passwordLengthError"> يرجى ادخال كلمة مرور ملائمة </p>
+
+        <div class="forgotPassword-div">
+            <a class="forgotPassword-para"> نسيت كلمة المرور </a>
+        </div>
+  
+        <!-- The Sign In button -->
+        <button class="myButton-btn" id="mySignInbutton-btn"> تسجيل الدخول </button>
+  
+        <div class="lowerSection-div" style="width: 49%;">
+            <p class="myLowerRightPara-para"> انشاء حساب </p>
+            <p class="myLowerLeftPara-para"> ليس لديك حساب؟ </p>
+        </div>
+  
+        </div>
+
+      </div>  
+</form>
+
+<!-- Getting Email From The User (getting the email from the user and send checking password to it) -->
+<form class="forgotPassForm form--hidden">
+    
+    <div class="middlePart-div">
+        <p class="myMiddleMainPara-para"> نسيت كلمة المرور </p>
+        <p class="myMiddlePara-para"> لاتقلق! قم بادخال عنوان بريدك الالكتروني لاعادة تعيينها بسهولة </p>
+        
+        <div class="myMainMiddleField-div">
+  
+        <p class="myNamePara-para">البريد الالكتروني</p>
+
+        <!-- The user will insert their email here -->
+        <input class="myEmailInput-input myEmailInput-input1" id="myForgottenEmailInput-input" type="text" placeholder="you@example.com" required></input>  
+  
+        <p class="myPasswordWarning-para hiddenError" id="emailSendingExistanceError"> لايمكن ترك الحقل فارغ </p>
+        <p class="myPasswordError-para hiddenError" id="emailSendingLengthError"> يرجى ادخال بريد الكتروني ملائم </p>
+        <!-- This button will send the security number to their email they typed -->
+        <button class="myButton-btn" id="sendingEmailButton-btn"> ارسال </button>
+
+        </div>
+    </div> 
+</form>
+
+<!-- Getting Checking Password From the User -->
+<form class="Checking_Password_Form form--hidden">
+
+    <div class="middlePart-div ">
+        <p class="myMiddleMainPara-para"> إدخال رمز التحقق </p>
+        <p class="myMiddlePara-para"> الرجاء إدخال الرمز الذي تم إرساله إلى عنوان بريدك الإلكتروني للتحقق </p>
+        
+        <div class="myMainMiddleField-div">
+  
+        <!-- The User Will type the security numbers they got from their email -->
+        <div class="myFourBoxes-div">
+            <input class="myBoxInputOne-input myBoxInput-input" type="text" required></input>  
+            <input class="myBoxInputTwo-input myBoxInput-input" type="text" required></input> 
+            <input class="myBoxInputThree-input myBoxInput-input" type="text" required></input> 
+            <input class="myBoxInputFour-input myBoxInput-input" type="text" required></input> 
+ 
+        </div>
+
+        <div style="display: flex; justify-content: center; width: 100%; margin-bottom: -15px;">
+            <p class="myLowerRightPara-para forgotPassword-para" style="margin-right: 5px;">اعادة ارسال </p>
+            <p class="myLowerLeftPara-para"  > لم يصلك الرمز؟</p>
+        </div>
+  
+        <!-- The User Will type the security numbers they got from their email -->
+        <button class="myButton-btn" id="sending_Checking_Password_Button-btn"> ارسال </button>
+  
+        </div>
+    </div>
+
+</form>
+
+<!-- Re-Setting The Password -->
+
+<form class="sendingEmailForm form--hidden">
+
+    <div class="middlePart-div ">
+        <p class="myMiddleMainPara-para">اعادة تعيين كلمة السر</p>
+        <p class="myMiddlePara-para">لإعادة تعيين كلمة المرور،يرجى اختيار كلمة مرور قوية لحماية حسابك</p>
+        
+        <div class="myMainMiddleField-div">
+  
+        <p class="myNamePara-para">كلمة المرور الجديدة</p>
+      
+        <div style="display: flex;">
+            <button class="myShowPasswordButton-btn2 myShowPasswordButton-btn"> 
+                <img id="myPasswordImage-img2" style="width: 25px; margin-top: 7px;" src="/Frontend/src/SvgAndImg/eye-closed_svgrepo.com.png" /> 
+            </button>
+            <input  class="myNameInput-input myNewPasswordInput-input" type="password" placeholder="كلمة المرور" required>
+            </input>
+        </div>
+        <p class="myPasswordWarning-para hiddenError" id="newPasswordExistanceError"> لايمكن ترك الحقل فارغ </p>
+        <p class="myPasswordError-para hiddenError" id="newPasswordLengthError"> يرجى ادخال كلمة مرور ملائمة </p>
+
+        <p class="myNamePara-para">كلمة المرور </p>
+
+        <div style="display: flex;">
+            <button class="myShowPasswordButton-btn3 myShowPasswordButton-btn"> 
+                <img id="myPasswordImage-img3" style="width: 25px; margin-top: 7px;" src="/Frontend/src/SvgAndImg/eye-closed_svgrepo.com.png" /> 
+            </button>
+            <input  class="myNameInput-input myVerifiedPasswordInput-input" type="password" placeholder="كلمة المرور" required>
+            </input> 
+        </div>
+        <p class="myPasswordError-para hiddenError" id="newPasswordTrueError"> كلمة المرور غير مطابقة </p>
+        <p class="myPasswordError-para hiddenError" id="newPasswordCheckedExistanceError"> يرجى ادخال كلمة المرور </p>
+  
+        <button class="myButton-btn" id="verifying_Changing_Password_Button_btn"> ارسال </button>
+
+  
+        </div>
+      </div>
+</form>
+</div>
+    <script src="/Frontend/src/SignIn/main.js"></script>
+</body>
+</html>

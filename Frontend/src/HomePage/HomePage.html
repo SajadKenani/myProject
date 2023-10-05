@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Tajawal' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <link href="/Frontend/src/HomePage/HomePage.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <div class="myUpperMainDiv-div">
+        <!-- Content on the very top -->
+        <div class="veryTopContent-div"></div>
+        <div class="belowTopContent-div">
+            <div class="LeftTopContent-div">
+                <img class="myLogoImage-img" src="/Frontend/src/SvgAndImg/WhiteIcon.png"/>
+                <p class="myLogoPara-para"> Dhad </p>    
+                
+            </div>
+            <div class="RightTopContent-div">
+                <div class="searchLogoDiv-div"> <img style="width: 15.51px; height: 15.81px; margin: 8px;" src="/Frontend/src/SvgAndImg/Search.png"/> </div>
+                <div class="categoryLogoDiv-div"> <img style="width: 15.51px; height: 15.81px; margin: 8px;" src="/Frontend/src/SvgAndImg/Category.png"/> </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
+
+    <form class="myMainForm">
+
+    <div style="display: flex;">
+        <button class="myLeftButton-btn"><img id="myLeftButtonImage"></button>
+        <div class="myContentInfo-div">
+             
+        </div>
+        <button class="myRightButton-btn"><img id="myRightButtonImage"></button>
+    </div>
+
+        <div class="myMainPara-Div" style="margin-top: -20px;">
+            <p class="showAllOption-para"> عرض الكل </p>
+            <p class="messageOption-para" > رسائل الماجستير </p>
+        </div>
+
+
+            <div class="swiper mySwiper" >
+              <div class="swiper-wrapper " style="transition-duration: 1e+08ms; transform: translate3d(5%, 0px, 0px);">
+                <div class="swiper-slide myCard">
+               
+              </div>
+            </div>
+           
+    </div>
+
+    <div> 
+        <div class="myMainPara-Div">
+            <p class="showAllOption-para"> عرض الكل </p>
+            <p class="messageOption-para"> اطروحة الدكنوراة </p>
+        </div>
+
+        <div style="justify-content: end;">
+
+        <div class="swiper mySwiper" >
+            <div class="swiper-wrapper " 
+            style="transition-duration: 1e+08ms; transform: translate3d(5%, 0px, 0px);">
+              <div class="swiper-slide " >
+                <div class="myCard2"></div>        
+            </div>
+          </div> 
+        </div>
+        </div>
+    </div>
+
+    </form>
+   
+    <form class="myCardForm hidden">
+     
+
+        <img  class="myCardImage-img" />
+
+        <div class="myCardMain-div">    
+   
+            <p class="myCardPara-para"></p>
+     
+            <p class="myCardMainPara-para"> نبذة مختصرة </p>
+     
+            <p class="myCardMiniPara-para myCardMiniPara-paraOne"></p>
+     
+            <p class="myCardMainPara-para"> المؤلف </p>
+     
+            <p class="myCardMiniPara-para myCardMiniPara-paraTwo"></p>
+     
+            <div class="rateAndReviewsDiv-div"> 
+            <img class="myLeftArrow-img" src="/Frontend/src/HomePage/myImages/Vector.png" />
+            <p class="myCardMainPara-para"> التقييم والمراجعات </p>  
+                
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="myMoreCards-div col-md-4"> </div>     
+            </div>
+        </div>
+        
+        
+     
+        <div class="myPurchasedDiv-div">
+            <button class="myPurchased-btn ">
+                <img style="width: 15.07px; height: 16.02;" src="/Frontend/src/HomePage/myImages/CardMoreInfoImg/Bag.png">
+            </button>
+        </div> 
+     
+     
+         
+        </div>
+
+ 
+
+         
+    </form>
+
+    <!-- Rate And Reviews Section -->
+
+    <form class="RateAndReviews hidden">
+
+        <p class="myRateAndReview-para"> التقييم والمراجعات </p>
+
+        <div class="addRateButton-btn"> <img class="myAddRate-img" src="/Frontend/src/HomePage/myImages/icon.png" /> </div>
+
+
+
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+    <script src="/Frontend/src/HomePage/HomePage.js" type="module"> </script>
+    <script src="/Frontend/src/HomePage/MyData.js " type="module"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <script> 
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 0.3,
+        speed: 100000000,
+
+        spaceBetween: -150,
+        loop: false,
+        grabCursor: false,
+
+
+
+    })
+    
+    </script>
+</body>
+</html>
