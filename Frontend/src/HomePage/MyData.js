@@ -2,19 +2,19 @@ export const myData = [
     {
         id: 0,
         name: "كتاب سجلات نارنيا",
-        image: "myImages/FirstImage.png",
+        image: "../myImages/FirstImage.png",
         writerName: "لويس 2009",
     },
     {
         id: 1,
         name: "كتاب سجلات نارنيا 222",
-        image: "myImages/FirstImage.png",
+        image: "../myImages/FirstImage.png",
         writerName: " 222 لويس 2009",
     },
     {
         id: 2,
         name: "333 كتاب سجلات نارنيا",
-        image: "myImages/FirstImage.png",
+        image: "../myImages/FirstImage.png",
         writerName: "لويس 333 2009",
     },
 
