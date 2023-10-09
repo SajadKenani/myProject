@@ -164,7 +164,7 @@ body{
   .forgotPassword-para{
     color: #043B50;
 
-    font-family: Tajawal;
+    font-family: "Tajawal";
     font-family: 400;
     font-size: 12px;
 
@@ -521,3 +521,4 @@ body{
   
   
  }
+

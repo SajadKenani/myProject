@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Tajawal' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <link href="/Frontend/src/HomePage/HomePage.css" rel="stylesheet">
+    <title>Home</title>
+    <style> </style>
+</head>
+<body>
+    <!-- Catagory Side Page -->
+    <Container  class="myAccountPage hidden" >
+        <!-- Main Catagory Div -->
+        <div class="mainDiv-div">
+            <!-- Users Profile Picture -->
+            <img class="myAccountImage-img" />
+
+            <!-- User's Full Name -->
+            <p class="myAccountName-para"> </p>
+            
+            <!-- The Options  -->
+            <div class="mainDivOption">
+
+                <!-- Option One For Main -->
+                <div class="option " id="option0">  
+                    <p class="optionPara"> الرئيسية </p>   
+                    <img class="optionImage" src="/Frontend/src/HomePage/myImages/CategoryImages/home-1_svgrepo.com.png" />
+                </div>
+        
+                <!-- Option Two For Services -->
+                <div class="option" id="option1">               
+                    <p class="optionPara"> الخدمات </p>    
+                    <img class="optionImage" src="/Frontend/src/HomePage/myImages/CategoryImages/category-2_svgrepo.com.png" />     
+                </div>
+           
+                <!-- Option Three For Downloads -->
+                <div class="option" id="option2">                 
+                    <p class="optionPara"> التنزيلات </p>         
+                    <img class="optionImage" src="/Frontend/src/HomePage/myImages/CategoryImages/download-minimalistic_svgrepo.com.png" />           
+                </div>
+            
+                <!-- Option Four For Account -->
+                <div class="option" id="option3">                     
+                    <p class="optionPara"> الحساب </p>                
+                    <img class="optionImage" src="/Frontend/src/HomePage/myImages/CategoryImages/user_svgrepo.com.png"/>   
+                </div>
+           
+                <!-- Option Five For Contact Us -->
+                <div class="option" id="option4">                 
+                    <p class="optionPara"> تواصل معنا </p>        
+                    <img class="optionImage" src="/Frontend/src/HomePage/myImages/CategoryImages/phone_svgrepo.com.png"/>           
+                </div>
+
+                <!-- Option six For Sign Out -->
+                <div class="option" id="option5" style="margin-top: 225px;">                 
+                    <p class="optionPara"> تسجيل الخروج </p>        
+                    <img class="optionImage" src="/Frontend/src/HomePage/myImages/CategoryImages/logout-2_svgrepo.com.png"/>           
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- The Shadow Beside The Div -->
+        <div class="shadowDiv-div"> </div> 
+
+    </Container>
+
+<!-- Upper Bar Div -->
+<div class="myUpperMainDiv-div">
+    <!-- The Space on the very top -->
+    <div class="veryTopContent-div"></div>
+
+    <!-- The Content of the Upper Div -->
+    <div class="belowTopContent-div">
+        <!-- The Content On The Left -->
+        <div class="LeftTopContent-div">
+            <!-- The Logo -->
+            <img class="myLogoImage-img" src="/Frontend/src/SvgAndImg/WhiteIcon.png"/>
+            <!-- Company's Name -->
+            <p class="myLogoPara-para"> Dhad </p>                
+        </div>
+        <!-- The Content On The Right Side -->
+        <div class="RightTopContent-div">
+            <!-- The Search Icon -->
+            <div class="searchLogoDiv-div"> 
+                <img style="width: 15.51px; height: 15.81px; margin: 8px;" src="/Frontend/src/SvgAndImg/Search.png"/> 
+            </div>
+            <!-- The Category Icon -->
+            <div class="categoryLogoDiv-div"> 
+                <img style="width: 15.51px; height: 15.81px; margin: 8px;" src="/Frontend/src/SvgAndImg/Category.png"/> 
+            </div>
+        </div>
+    </div>
+    
+</div>
+    
+<!-- The Home Page Main Container -->
+<Outer class="myHomePage" style="z-index: 432;"> 
+    <!-- The Content on the First Page -->
+   <container class="myMainForm">
+        <!-- The Main Top Big Sliders -->
+        <div class="swiper swipe" style="margin-top: 25px;">
+            <div class="swiper-wrapper myContentInfo-div"></div>
+        </div>
+    
+        <div class="myMainPara-Div" style="margin-top: -20px;">
+            <p class="showAllOption-para showAllOption-para1"> عرض الكل </p>
+            <p class="messageOption-para" > رسائل الماجستير </p>
+        </div>
+
+
+        <div class="swiper mySwiper" >
+            <div class="swiper-wrapper " >
+                <div class="swiper-slide myCard"></div>
+            </div>     
+        </div>
+
+        <div> 
+            <div class="myMainPara-Div">
+                <p class="showAllOption-para showAllOption-para2"> عرض الكل </p>
+                <p class="messageOption-para"> اطروحة الدكنوراة </p>
+            </div>
+    
+            <div class="swiper mySwiper" >
+                <div class="swiper-wrapper " >
+                    <div class="swiper-slide myCard2" ></div>
+                </div>  
+            </div>
+        </div>
+
+    </container>
+
+    <signOutContainer class="signOutContainer hidden"> 
+
+            <div class="innerSignOutDiv" style=" display: flex; justify-content: center; z-index: 543;" >
+                <div class="myInnerSucsPassDiv-div" style="justify-content: center;  height: 290px;">
+        
+                    <div class="circleChangedPass-div">
+                        <svg class="trueSign-svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                            <style>svg{fill:#ffffff; width: 25px; height: 25px;}</style>
+                            <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                        </svg>
+                    </div>
+        
+                    <div style="display: flex; justify-content: center;">
+                        <p class="passChanged-para"> تسجيل الخروج!</p>
+                        
+                    </div>
+        
+                    <div style="display: flex; justify-content: center;">
+                        <p class="passChangedTwo-para"> هل تود حقا تسجيل الخروج؟</p>
+                        
+                    </div>
+        
+                    
+        
+                    <button class="myButton-btn" id="btn1" style="width: 90%; display: grid; margin: 0 auto; margin-top: 10px;" > متابعة التصفح </button>
+                    <button class="myButton-btn signOut-btn" style="width: 90%; display: grid; margin: 0 auto; margin-top: 10px;" > تسجيل الخروج </button>
+                </div>
+                
+            </div>
+        
+     
+    </signOutContainer>
+
+    <form class="showAllCards1 hidden" >
+        <p class="messageOption-para" style="width: 90%; text-align: end;"> رسائل الماجستير </p>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 myMoreCards-div1 "> </div>     
+            </div>
+        </div>
+        
+    </form>
+
+
+
+    <form class="showAllCards2 hidden" >
+        <p class="messageOption-para" style="width: 90%; text-align: end;"> اطروحة الدكنوراة </p>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 myMoreCards-div2 "> </div>     
+            </div>
+        </div>
+        
+    </form>
+
+
+   
+<CardsContainer class="myCardForm hidden">
+     
+
+    <img  class="myCardImage-img" />
+
+    <div class="myCardMain-div">    
+   
+        <p class="myCardPara-para"></p>
+     
+        <p class="myCardMainPara-para"> نبذة مختصرة </p>
+     
+        <p class="myCardMiniPara-para myCardMiniPara-paraOne"></p>
+     
+        <p class="myCardMainPara-para"> المؤلف </p>
+     
+        <p class="myCardMiniPara-para myCardMiniPara-paraTwo"></p>
+     
+        <div class="rateAndReviewsDiv-div"> 
+            <img class="myLeftArrow-img" src="/Frontend/src/HomePage/myImages/Vector.png" />
+            <p class="myCardMainPara-para"> التقييم والمراجعات </p>    
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 myMoreCards-div "> </div>     
+            </div>
+        </div>
+
+        
+        <div class="myPurchasedDiv-div">
+            
+            <button class="myPurchased-btn "></button>
+        </div> 
+     
+     
+         
+    </div>
+      
+</CardsContainer>
+
+<ServicesContainder class="ServicesContainder hidden">
+    <p class="myServicesMainPara"> خدمات الطباعة</p>
+
+    <div> 
+        <div class="myMainSquare-div"> 
+            <div> 
+                <div class="myMiniSquare-div">
+                    <p class="myMiniSquare-para"> الاستلال </p>
+                    <img class="myMiniSquare-img" src="/Frontend/src/HomePage/myImages/ServicesImages/Frame 55.png" />
+                </div>
+        
+                <div class="myMiniSquare-div">
+                    <p class="myMiniSquare-para"> الترجمة </p>
+                    <img class="myMiniSquare-img" src="/Frontend/src/HomePage/myImages/ServicesImages/Frame 55 (2).png" />
+                </div>
+            </div>
+
+            <div> 
+                <div class="myMiniSquare-div">
+                    <p class="myMiniSquare-para"> الطباعة </p>
+                    <img class="myMiniSquare-img" src="/Frontend/src/HomePage/myImages/ServicesImages/Frame 55 (1).png" />
+                </div>
+        
+                <div class="myMiniSquare-div">
+                    <p class="myMiniSquare-para"> التنضيد </p>
+                    <img class="myMiniSquare-img" src="/Frontend/src/HomePage/myImages/ServicesImages/Frame 55 (3).png" />
+                </div>
+            </div>
+         
+        </div>
+    </div>
+
+    <p class="myServicesMainPara"> خدمات التصميم</p>
+
+    <div> 
+        <div class="myMainSquare-div"> 
+            <div> 
+                <div class="myMiniSquare-div">
+                    <p class="myMiniSquare-para"> الاعلانات </p>
+                    <img class="myMiniSquare-img" src="/Frontend/src/HomePage/myImages/ServicesImages/Frame 55 (4).png" />
+                </div>
+        
+                <div class="myMiniSquare-div">
+                    <p class="myMiniSquare-para"> البوسترات </p>
+                    <img class="myMiniSquare-img" src="/Frontend/src/HomePage/myImages/ServicesImages/Frame 55 (5).png" />
+                </div>
+            </div>
+
+            <div> 
+                <div class="myMiniSquare-div">
+                    <p class="myMiniSquare-para"> الشعارات </p>
+                    <img class="myMiniSquare-img" src="/Frontend/src/HomePage/myImages/ServicesImages/Frame 55 (6).png" />
+                </div>
+        
+                <div class="myMiniSquare-div">
+                    <p class="myMiniSquare-para"> بوربوينت </p>
+                    <img class="myMiniSquare-img" src="/Frontend/src/HomePage/myImages/ServicesImages/Frame 55 (7).png" />
+                </div>
+            </div>  
+        </div>
+    </div>
+
+
+
+
+
+</ServicesContainder>
+
+
+
+<DownloadsContainder class="DownloadsContainder hidden">
+    <p class="myServicesMainPara"> التنزيلات </p>
+
+
+
+
+
+
+</DownloadsContainder>
+
+
+
+
+<AccountContainder class="AccountContainder hidden">
+    <div class="myMainAccountContainer"> 
+        <img class="myAccount-img "> 
+            <img class="miniImage " src="/Frontend/src/HomePage/myImages/AccountImages/Frame 25.png" />
+        </img>
+
+        <p class="myAccountPara "> </p>
+
+        <p class="myUserName-para"> اسم المستخدم </p>
+
+        <input class="myUserName-input" id="userNameInput1" placeholder="اسم المستخدم" />
+
+        <div class="emptyInputWarning5 hidden"> 
+            <p class="myPasswordWarning-para" > لا يمكن ترك الحقل فارغ </p>
+        </div>
+
+        <p class="myUserName-para" style="margin-top: 20px;"> البريد الالكتروني </p>
+
+        <input class="myUserName-input" id="userEmailInput1" type="email" placeholder="البريد الالكتروني" />
+
+        <div class="emptyInputWarning6 hidden"> 
+            <p class="myPasswordWarning-para" > لا يمكن ترك الحقل فارغ </p>
+        </div>
+
+        <p class="myUserName-para" style="margin-top: 20px;"> كلمة المرور </p>
+
+        <div style="display: flex;">
+            <button class="myShowPasswordButton-btn myShowPasswordButton-btn0"> 
+                <img id="myPasswordImage-img0" style="width: 25px; margin-top: 7px;" src="/Frontend/src/SvgAndImg/eye-closed_svgrepo.com.png" /> 
+            </button>
+            <input class="myPasswordInput-input" id="password0" type="password" placeholder="كلمة المرور" required></input>
+        </div>
+
+        <div class="emptyInputWarning7 hidden"> 
+            <p class="myPasswordWarning-para" > لا يمكن ترك الحقل فارغ </p>
+        </div>
+
+        <div class="outerChangePassword-para">
+            <a class="changePassword-para"> تغيير كلمة المرور </a>
+        </div>
+
+        <button style="margin-top: 20px;" class="myButton-btn" id="mySaveInfoButton"> حفظ المعلومات </button>
+
+        <div class="outerChangePassword-div hidden">
+            <div class="myInnerSucsPassDiv-div hidden">
+    
+                <div class="circleChangedPass-div">
+                    <svg class="trueSign-svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                        <style>svg{fill:#ffffff; width: 25px; height: 25px;}</style>
+                        <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                    </svg>
+                </div>
+    
+                <div style="display: flex; justify-content: center;">
+                    <p class="passChanged-para"> تم الحفظ </p>
+                    
+                </div>
+    
+    
+                
+    
+                <button class="myButton-btn" style="width: 90%; display: grid; margin: 0 auto; margin-top: 10px;" > موافق </button>
+    
+            </div>
+            
+        </div>
+    </div>
+</AccountContainder>
+
+
+
+
+
+</Outer>
+
+    <!-- Rate And Reviews Section -->
+
+    <RateAndReviewsContainer class="RateAndReviews hidden">    
+
+        <p class="myRateAndReview-para"> التقييم والمراجعات </p>
+    
+        <div class="addRateButton-btn"> <img class="myAddRate-img" src="/Frontend/src/HomePage/myImages/icon.png" /> </div>
+    
+    </RateAndReviewsContainer>
+
+
+<div class="outerShareComment-div hidden" style="top: 0;"> 
+    <div class="innerShareComment-div "> 
+
+        <p class="shareCommentPara-para"> شارك تجربتك </p>
+
+        <img class="myShareComment-Img" /> 
+
+        <p class="RaterName-para"> </p>
+
+        <div class="myRaterStars-div"> </div>
+
+        <textarea class="myRateInput-inp" placeholder="اكتب تقييمك"></textarea>
+
+        <button class="myShareRate-btn"> نشر </button>
+
+    </div>
+</div>
+
+<SearchContainer class="mySearchPage hidden"> 
+
+    <div class="mainSearchDiv-div"> 
+
+        <button class="mySettingButton-btn"> </button>
+
+        <input class="searchBar-ipt" placeholder="اكتب موضوع البحث ">  
+            <img class="mySearchImage-img" src="/Frontend/src/SvgAndImg/Search.png" />
+        </input>
+    </div>
+
+</SearchContainer>
+
+<PaymentContainer class="myPaymentContainer hidden">
+    <div class="upperCirclesMainDiv">
+
+        <div class="circleDiv"> 
+            <div class="unselectedCircle" id="circle1"> <p style="margin-top: 3px;"> 3 </p> </div>
+            <p class="unselectedCirclePara" id="circlePara1"> وسيلة الدفع</p>
+        </div>
+            <div class="myUnselectedLine" id="myLine2"></div>
+
+        <div class="circleDiv"> 
+            <div class="unselectedCircle" id="circle2"> <p style="margin-top: 3px;"> 2 </p> </div>
+            <p class="unselectedCirclePara" id="circlePara2"> معلومات البطاقة</p>
+        </div>
+            <div class="myUnselectedLine" id="myLine1"></div>
+
+        <div class="circleDiv">
+            <div class="circle" id="circle3"> <p style="margin-top: 3px;"> 1 </p> </div>
+            <p class="circlePara" id="circlePara3"> تأكيد الشراء </p>
+         </div>
+    </div>
+
+    <div style="width: 100%; display: flex; justify-content: center;">
+        <img class="myMainPurchasedImage" src="/Frontend/src/HomePage/myImages/PurchaseImages/Frame 1405.png" />
+    </div>
+
+    
+    <div class="myPurchasedContentDiv"> 
+        <div class="myInnerPurchasedContentDiv"  style="display: grid;">
+            <p class="mainPurchasedPara">  </p>
+            <p class="myPurchasedPara"> </p>
+            <div class="myInnerContent">
+
+                <div style="width: 100%; margin-bottom: 10px; margin-top: 10px;">
+
+                    <div class="myOuterCircle"> 
+                        <div class="myInnerCircle" id="chosenCircle1"> 
+                            <div class="myVeryInnerCircle myVeryInnerCircle1 " >  </div>
+                        </div>
+                    </div>
+
+                    <div class="sectionDiv">
+                    <p> فيزا كارد </p> 
+                    <img class="myMiniImage" src="/Frontend/src/HomePage/myImages/PurchaseImages/Frame 1413.png" />    
+                    </div>
+                    
+                   
+                </div>
+
+                <div style="width: 100%; margin-bottom: 10px; margin-top: 10px;">
+
+                    <div class="myOuterCircle"> 
+                        <div class="myInnerCircle" id="chosenCircle2"> 
+                            <div class="myVeryInnerCircle myVeryInnerCircle2 hidden" > </div>
+                        </div>
+                    </div>
+
+                    <div class="sectionDiv">
+                    <p> ماستر كارد </p> 
+                    <img class="myMiniImage" src="/Frontend/src/HomePage/myImages/PurchaseImages/Frame 1413 (1).png" />    
+                    </div>
+                    
+                   
+                </div>
+
+                <div style="width: 100%; margin-bottom: 10px; margin-top: 10px;">
+
+                    <div class="myOuterCircle"> 
+                        <div class="myInnerCircle" id="chosenCircle3"> 
+                            <div class="myVeryInnerCircle myVeryInnerCircle3 hidden" >  </div>
+                        </div>
+                    </div>
+
+                    <div class="sectionDiv">
+                    <p> زين كاش </p> 
+                    <img class="myMiniImage" src="/Frontend/src/HomePage/myImages/PurchaseImages/Frame 1413 (2).png" />    
+                    </div>
+                    
+                   
+                </div>
+
+                <div style="width: 100%; margin-bottom: 10px; margin-top: 10px;">
+
+                    <div class="myOuterCircle"> 
+                        <div class="myInnerCircle" id="chosenCircle4"> 
+                            <div class="myVeryInnerCircle myVeryInnerCircle4 hidden" >  </div>
+                        </div>
+                    </div>
+
+                    <div class="sectionDiv">
+                    <p> اسيا جوالة </p> 
+                    <img class="myMiniImage" src="/Frontend/src/HomePage/myImages/PurchaseImages/Frame 1413 (3).png" />    
+                    </div>
+                    
+                   
+                </div>
+
+            </div> 
+
+         
+
+            <button class="myContinueButton "> </button>
+        </div>
+    </div>
+   
+
+</PaymentContainer>
+
+<payingContainer class="payingContainer hidden">
+    <div class="Password_Sucsessfuly_Changed  form--hidden">
+        <div class="myInnerSucsPassDiv-div">
+
+            <div class="circleChangedPass-div">
+                <svg class="trueSign-svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                    <style>svg{fill:#ffffff; width: 25px; height: 25px;}</style>
+                    <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                </svg>
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <p class="passChanged-para"> تمت عملية الدفع بنجاح!</p>
+                
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <p class="passChangedTwo-para"> تمت عملية الدفع بنجاح. شكرًا لثقتك بنا!</p>
+                
+            </div>
+
+            
+
+            <button class="myButton-btn" style="width: 90%; display: grid; margin: 0 auto; margin-top: 10px;" > متابعة التصفح </button>
+
+        </div>
+        
+    </div>
+
+</payingContainer>
+
+<ForgetPasswordContainer class="ForgetPasswordContainer hidden"> 
+    <div style="width: 328px; margin: 0 auto;">
+    <div style="margin-top: 30px;"> 
+        <p class="passwordMainPara"> تغيير كلمة المرور </p>
+    <div> 
+        
+    <div style="margin-top: 50px;"> 
+        <p class="passwordMiniPara"> كلمة المرور القديمة </p>
+    <div>
+
+    <div style="display: flex;">
+        <button class="myShowPasswordButton-btn myShowPasswordButton-btn1"> 
+            <img id="myPasswordImage-img1" style="width: 25px; margin-top: 7px;" src="/Frontend/src/SvgAndImg/eye-closed_svgrepo.com.png" /> 
+        </button>
+        <input class="myPasswordInput-input" id="password1" type="password" placeholder="كلمة المرور" required></input>
+    </div>
+    <div id="warning1" class="hidden"> 
+        <p class="myPasswordWarning-para"> يرجى ادخال كلمة المرور </p>
+    </div>
+
+    <div > 
+        <p class="passwordMiniPara" style="margin-top: 20px;"> كلمة المرور الجديدة </p>
+    <div> 
+
+    <div style="display: flex;">
+        <button class="myShowPasswordButton-btn myShowPasswordButton-btn2"> 
+            <img id="myPasswordImage-img2" style="width: 25px; margin-top: 7px;" src="/Frontend/src/SvgAndImg/eye-closed_svgrepo.com.png" /> 
+        </button>
+        <input class="myPasswordInput-input" id="password2" type="password" placeholder="كلمة المرور" required></input>
+    </div>
+    <div id="warning2" class="hidden"> 
+        <p class="myPasswordWarning-para"> يرجى ادخال كلمة المرور </p>
+    </div>
+
+    <div> 
+        <p class="passwordMiniPara" style="margin-top: 20px;"> تأكيد كلمة المرور الجديدة </p>
+    <div> 
+
+    <div style="display: flex;">
+        <button class="myShowPasswordButton-btn myShowPasswordButton-btn3"> 
+            <img id="myPasswordImage-img3" style="width: 25px; margin-top: 7px;" src="/Frontend/src/SvgAndImg/eye-closed_svgrepo.com.png" /> 
+        </button>
+        <input class="myPasswordInput-input" id="password3" type="password" placeholder="كلمة المرور" required></input>
+    </div>
+    <div id="warning3" class="hidden"> 
+        <p class="myPasswordWarning-para"> يرجى ادخال كلمة المرور </p>
+       
+    </div>
+
+    <div id="error1" class="hidden"> 
+        <p class="myPasswordError-para"> كلمة المرور غير مطابقة </p>
+       
+    </div>
+    
+    
+
+    <div style="display: grid;">
+    <button class="mySaveInfoButton"> حفظ المعلومات </button>
+    <button class="myCancelButton"> الغاء </button>
+    </div>
+    <div>
+</ForgetPasswordContainer>
+
+
+    <script src="/Frontend/src/HomePage/HomePage.js" type="module"> </script>
+    <script src="/Frontend/src/HomePage/MyData.js " type="module"> </script>
+    <script src="/Frontend/src/HomePage/MyForm.js " type="module"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <script> 
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView:0.4,
+        speed: 1000000000000000000000,
+
+        loop: false,
+        grabCursor: true,
+
+         
+
+
+
+
+    })
+    
+    var mySwiper = new Swiper(".swipe", {
+
+        slidesPerView: 1.07,
+        spaceBetween: -20 + "%",
+        grabCursor: true,
+        loop: true,
+        centeredSlides: true, 
+        initialSlide: 4, 
+
+    })
+
+
+
+    </script>
+</body>
+</html>
