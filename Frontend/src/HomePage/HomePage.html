@@ -7,11 +7,79 @@
     <link href='https://fonts.googleapis.com/css?family=Tajawal' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
 
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
-    <link href="/Frontend/src/HomePage/HomePage.css" rel="stylesheet">
+    <link href="/Frontend/src/HomePage/myCssFiles/HomePage.css" rel="stylesheet">
+    <link href="/Frontend/src/HomePage/myCssFiles/AccountPage.css" rel="stylesheet">
+    <link href="/Frontend/src/HomePage/myCssFiles/mySideDiv.css" rel="stylesheet">
+    <link href="/Frontend/src/HomePage/myCssFiles/PaymentPage.css" rel="stylesheet">
+    <link href="/Frontend/src/HomePage/myCssFiles/RateAndReviews.css" rel="stylesheet">
+    <link href="/Frontend/src/HomePage/myCssFiles/SearchPage.css" rel="stylesheet">
+    <link href="/Frontend/src/HomePage/myCssFiles/upperSection.css" rel="stylesheet">
+    <link href="/Frontend/src/HomePage/myCssFiles/ServicesPage.css" rel="stylesheet">
+   
+
+    <InfoSaved class="InfoSaved hidden">
+        <div class="Password_Sucsessfuly_Changed  form--hidden">
+            <div class="myInnerSucsPassDiv-div">
+    
+                <div class="circleChangedPass-div">
+                    <svg class="trueSign-svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                        <style>svg{fill:#ffffff; width: 25px; height: 25px;}</style>
+                        <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                    </svg>
+                </div>
+    
+                <div style="display: flex; justify-content: center;">
+                    <p class="passChanged-para"> تم الحفظ!</p>
+                    
+                </div>
+    
+    
+                
+    
+                <button class="myButton-btn myBuyingButton-btn" style="width: 90%; display: grid; margin: 0 auto; margin-top: 10px;" > موافق </button>
+    
+            </div>
+            
+        </div>
+    
+    </InfoSaved>
+    
+    <SignOutContainer class=" SignOutContainer hidden"> 
+        <div class="Password_Sucsessfuly_Changed  form--hidden" >
+            <div class="myInnerSucsPassDiv-div" style="height: 340px;">
+    
+                <div class="circleChangedPass-div">
+                    <svg class="trueSign-svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                        <style>svg{fill:#ffffff; width: 25px; height: 25px;}</style>
+                        <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                    </svg>
+                </div>
+    
+                <div style="display: flex; justify-content: center;">
+                    <p class="passChanged-para"> تسجيل الخروج!</p>
+                    
+                </div>
+    
+                <div style="display: flex; justify-content: center;">
+                    <p class="passChangedTwo-para"> هل تود حقا تسجيل الخروج؟</p>
+                    
+                </div>
+          
+    
+                <button class="myButton-btn myBuyingButton-btn continue-btn" style="width: 90%; display: grid; margin: 0 auto; margin-top: 10px;" > متابعة التصفح </button>
+                <button class="myButton-btn signOut-btn" style="width: 90%; display: grid; margin: 0 auto; margin-top: 10px;" > تسجيل الخروج</button>
+    
+            </div>
+            
+        </div>
+    
+    </SignOutContainer>
+    
+
     <title>Home</title>
     <style> </style>
 </head>
@@ -74,6 +142,8 @@
 
     </Container>
 
+
+
 <!-- Upper Bar Div -->
 <div class="myUpperMainDiv-div">
     <!-- The Space on the very top -->
@@ -103,6 +173,8 @@
     
 </div>
     
+
+
 <!-- The Home Page Main Container -->
 <Outer class="myHomePage" style="z-index: 432;"> 
     <!-- The Content on the First Page -->
@@ -173,12 +245,12 @@
     </signOutContainer>
 
     <form class="showAllCards1 hidden" >
-        <p class="messageOption-para" style="width: 90%; text-align: end;"> رسائل الماجستير </p>
+        <p class="messageOption-para" style="margin-top: 15px; width: 90%; text-align: end;"> رسائل الماجستير </p>
 
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 myMoreCards-div1 "> </div>     
-            </div>
+
+                <div class="row myMoreCards-div1 "> </div>     
+
         </div>
         
     </form>
@@ -186,12 +258,12 @@
 
 
     <form class="showAllCards2 hidden" >
-        <p class="messageOption-para" style="width: 90%; text-align: end;"> اطروحة الدكنوراة </p>
+        <p class="messageOption-para" style="margin-top: 15px; width: 90%; text-align: end;"> اطروحة الدكنوراة </p>
 
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 myMoreCards-div2 "> </div>     
-            </div>
+
+                <div class="row myMoreCards-div2 "> </div>     
+   
         </div>
         
     </form>
@@ -220,12 +292,13 @@
             <p class="myCardMainPara-para"> التقييم والمراجعات </p>    
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 myMoreCards-div "> </div>     
-            </div>
+        <div class="container" style="padding-bottom: 100px;">
+    
+                <div class="row  myMoreCards-div myCardsInside-div "> </div>     
+
         </div>
 
+        
         
         <div class="myPurchasedDiv-div">
             
@@ -311,15 +384,7 @@
 <DownloadsContainder class="DownloadsContainder hidden">
     <p class="myServicesMainPara"> التنزيلات </p>
 
-
-
-
-
-
 </DownloadsContainder>
-
-
-
 
 <AccountContainder class="AccountContainder hidden">
     <div class="myMainAccountContainer"> 
@@ -335,6 +400,10 @@
 
         <div class="emptyInputWarning5 hidden"> 
             <p class="myPasswordWarning-para" > لا يمكن ترك الحقل فارغ </p>
+        </div>
+
+        <div class="emptyInputError5 hidden"> 
+            <p class="myPasswordError-para" > يجب ان لا يحتوي الاسم على رموز او ارقام </p>
         </div>
 
         <p class="myUserName-para" style="margin-top: 20px;"> البريد الالكتروني </p>
@@ -377,10 +446,7 @@
                 <div style="display: flex; justify-content: center;">
                     <p class="passChanged-para"> تم الحفظ </p>
                     
-                </div>
-    
-    
-                
+                </div>      
     
                 <button class="myButton-btn" style="width: 90%; display: grid; margin: 0 auto; margin-top: 10px;" > موافق </button>
     
@@ -429,17 +495,19 @@
 
     <div class="mainSearchDiv-div"> 
 
-        <button class="mySettingButton-btn"> </button>
+        <button class="mySettingButton-btn"> 
+        <img class="myFilterImage-img" src="/Frontend/src/HomePage/myImages/SearchPageImages/filter_svgrepo.com.png" />
+        </button>
 
         <input class="searchBar-ipt" placeholder="اكتب موضوع البحث ">  
-            <img class="mySearchImage-img" src="/Frontend/src/SvgAndImg/Search.png" />
+            <img class="mySearchImage" src="/Frontend/src/HomePage/myImages/SearchPageImages/Search.png" />
         </input>
     </div>
 
 </SearchContainer>
 
-<PaymentContainer class="myPaymentContainer hidden">
-    <div class="upperCirclesMainDiv">
+<PaymentContainer class="myPaymentContainer hidden" >
+    <div class="upperCirclesMainDiv" >
 
         <div class="circleDiv"> 
             <div class="unselectedCircle" id="circle1"> <p style="margin-top: 3px;"> 3 </p> </div>
@@ -464,8 +532,8 @@
     </div>
 
     
-    <div class="myPurchasedContentDiv"> 
-        <div class="myInnerPurchasedContentDiv"  style="display: grid;">
+    <div class="myPurchasedContentDiv" > 
+        <div class="myInnerPurchasedContentDiv"  style="display: grid; margin-top: 25px;">
             <p class="mainPurchasedPara">  </p>
             <p class="myPurchasedPara"> </p>
             <div class="myInnerContent">
@@ -473,13 +541,13 @@
                 <div style="width: 100%; margin-bottom: 10px; margin-top: 10px;">
 
                     <div class="myOuterCircle"> 
-                        <div class="myInnerCircle" id="chosenCircle1"> 
+                        <div class="myInnerCircle chosenCircle" id="chosenCircle1" data-target="myVeryInnerCircle1"> 
                             <div class="myVeryInnerCircle myVeryInnerCircle1 " >  </div>
                         </div>
                     </div>
 
                     <div class="sectionDiv">
-                    <p> فيزا كارد </p> 
+                    <p class="myWayOfPayment-para"> فيزا كارد </p> 
                     <img class="myMiniImage" src="/Frontend/src/HomePage/myImages/PurchaseImages/Frame 1413.png" />    
                     </div>
                     
@@ -489,13 +557,13 @@
                 <div style="width: 100%; margin-bottom: 10px; margin-top: 10px;">
 
                     <div class="myOuterCircle"> 
-                        <div class="myInnerCircle" id="chosenCircle2"> 
+                        <div class="myInnerCircle chosenCircle" id="chosenCircle2" data-target="myVeryInnerCircle2"> 
                             <div class="myVeryInnerCircle myVeryInnerCircle2 hidden" > </div>
                         </div>
                     </div>
 
                     <div class="sectionDiv">
-                    <p> ماستر كارد </p> 
+                    <p class="myWayOfPayment-para"> ماستر كارد </p> 
                     <img class="myMiniImage" src="/Frontend/src/HomePage/myImages/PurchaseImages/Frame 1413 (1).png" />    
                     </div>
                     
@@ -505,13 +573,13 @@
                 <div style="width: 100%; margin-bottom: 10px; margin-top: 10px;">
 
                     <div class="myOuterCircle"> 
-                        <div class="myInnerCircle" id="chosenCircle3"> 
+                        <div class="myInnerCircle chosenCircle" id="" data-target="myVeryInnerCircle3"> 
                             <div class="myVeryInnerCircle myVeryInnerCircle3 hidden" >  </div>
                         </div>
                     </div>
 
                     <div class="sectionDiv">
-                    <p> زين كاش </p> 
+                    <p class="myWayOfPayment-para"> زين كاش </p> 
                     <img class="myMiniImage" src="/Frontend/src/HomePage/myImages/PurchaseImages/Frame 1413 (2).png" />    
                     </div>
                     
@@ -521,13 +589,13 @@
                 <div style="width: 100%; margin-bottom: 10px; margin-top: 10px;">
 
                     <div class="myOuterCircle"> 
-                        <div class="myInnerCircle" id="chosenCircle4"> 
+                        <div class="myInnerCircle chosenCircle" id="chosenCircle4" data-target="myVeryInnerCircle4"> 
                             <div class="myVeryInnerCircle myVeryInnerCircle4 hidden" >  </div>
                         </div>
                     </div>
 
                     <div class="sectionDiv">
-                    <p> اسيا جوالة </p> 
+                    <p class="myWayOfPayment-para"> اسيا جوالة </p> 
                     <img class="myMiniImage" src="/Frontend/src/HomePage/myImages/PurchaseImages/Frame 1413 (3).png" />    
                     </div>
                     
@@ -535,9 +603,6 @@
                 </div>
 
             </div> 
-
-         
-
             <button class="myContinueButton "> </button>
         </div>
     </div>
@@ -568,13 +633,20 @@
 
             
 
-            <button class="myButton-btn" style="width: 90%; display: grid; margin: 0 auto; margin-top: 10px;" > متابعة التصفح </button>
+            <button class="myButton-btn myBuyingButton-btn" style="width: 90%; display: grid; margin: 0 auto; margin-top: 10px;" > متابعة التصفح </button>
 
         </div>
         
     </div>
 
 </payingContainer>
+
+
+
+<!-- Footer -->
+<FooterContainer class="FooterContainer"> 
+
+</FooterContainer>
 
 <ForgetPasswordContainer class="ForgetPasswordContainer hidden"> 
     <div style="width: 328px; margin: 0 auto;">
@@ -607,10 +679,10 @@
         <input class="myPasswordInput-input" id="password2" type="password" placeholder="كلمة المرور" required></input>
     </div>
     <div id="warning2" class="hidden"> 
-        <p class="myPasswordWarning-para"> يرجى ادخال كلمة المرور </p>
+        <p class="myPasswordWarning-para myPasswordWarning-para1"> يرجى ادخال كلمة المرور </p>
     </div>
 
-    <div> 
+    <div > 
         <p class="passwordMiniPara" style="margin-top: 20px;"> تأكيد كلمة المرور الجديدة </p>
     <div> 
 
@@ -639,11 +711,19 @@
     <div>
 </ForgetPasswordContainer>
 
+    
 
-    <script src="/Frontend/src/HomePage/HomePage.js" type="module"> </script>
-    <script src="/Frontend/src/HomePage/MyData.js " type="module"> </script>
-    <script src="/Frontend/src/HomePage/MyForm.js " type="module"> </script>
+
+
+    <script src="/Frontend/src/HomePage/myJsFiles/HomePage.js " type="module"> </script>  
+    <script src="/Frontend/src/HomePage/myJsFiles/MyData.js" type="module"> </script>
+    <script src="/Frontend/src/HomePage/myJsFiles/MyForm.js" type="module"> </script>
+    <script src="/Frontend/src/HomePage/myJsFiles/Navigations.js" type="module"> </script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
     
     <script> 
     var swiper = new Swiper(".mySwiper", {

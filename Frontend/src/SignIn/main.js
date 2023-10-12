@@ -416,7 +416,12 @@ mySignInbutton.addEventListener("click", (event) => {
             // to make this form appear
             Password_Sucsessfuly_Changed.classList.remove("form--hidden");
 
-            window.location.replace("/Frontend/src/HomePage/HomePage.html");
+            this.document.querySelector(".myButton-btn").addEventListener("click", () => {
+                // To go to the home page
+                window.location.replace("/Frontend/src/HomePage/HomePage.html");
+   
+           })
+         
 
         }
     })
