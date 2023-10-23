@@ -136,7 +136,7 @@ let mainMessage
 let accounts
 
 // Fetch and parse the HTML data as before
-fetch("/MyData.html")
+fetch("./MyData.html")
     .then(response => response.text())
     .then(data => {
     const tempDiv = document.createElement('div');
