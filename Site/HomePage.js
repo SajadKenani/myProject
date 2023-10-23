@@ -642,7 +642,7 @@ if ((eval(`message${id}`)[`id${[num]}`].rates).length === 0){
     
         // Set the star image based on the rater's rate
         starElement.src = (j < eval(`message${id}`)[`id${[num]}`].rates[`id${i}`].raterRate) ? 
-        "/Site/myImages/Star.png" : "./Site/myImages/RateAndReviewsImages/hiddenStar.png";
+        "./Site/myImages/Star.png" : "./Site/myImages/RateAndReviewsImages/hiddenStar.png";
     
         // Append the star element to the array
         starImages.push(starElement);
