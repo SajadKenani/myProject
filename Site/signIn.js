@@ -430,7 +430,7 @@ mySignInbutton.addEventListener("click", (event) => {
         event.preventDefault();
 
         // going to another page..
-        window.location.replace("/SignUp.html");
+        window.location.replace("/signUp.html");
     })
 
     // To hide all the forms
