@@ -135,7 +135,7 @@ let message1
 let mainMessage
 let accounts
 
-    ///
+    // Fetching...
 fetch("./MyData.html")
     .then(response => response.text())
     .then(data => {
