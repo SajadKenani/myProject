@@ -397,8 +397,6 @@ for (let section = 0; section < 2; section++){
         } 
     })
 
-
-
         const parentElement = document.querySelector('.myMoreCards-div'); // Change to the actual parent container
         parentElement.addEventListener("click", (event) => {
             if (event.target.getAttribute('data-target') === "myCard0") {
@@ -549,17 +547,17 @@ const myRateAndReviews = (num, id) => {
         }                
     }
     if (i === 0 ){
-    myRaterStars.innerHTML = ""
+    myRaterStars.innerHTML = "";
     myRaterStars.appendChild(myStarsDiv);
     }
     if (i === 1){
         myShareRate.addEventListener("click", () => {
-        myRaterStars.innerHTML = ""
+        myRaterStars.innerHTML = "";
         myFinalRate.raterRate = myRaterFinalRate;
         myFinalRate.raterComment = myRateInput.value;
         
         this.document.querySelector(".outerShareComment-div").classList.add("hidden");
-        console.log(myFinalRate)
+        console.log(myFinalRate);
     }) 
     }
 })
@@ -572,8 +570,8 @@ const myRateAndReviews = (num, id) => {
 
 // to check if rates & reviews are empty
 if ((eval(`message${id}`)[`id${[num]}`].rates).length === 0){
-    myRateAndReviewsForm.innerHTML = ""
-    myRateAndReviewsForm.innerHTML = `<p class="myRateAndReview-para"> التقييم والمراجعات </p>`
+    myRateAndReviewsForm.innerHTML = "";
+    myRateAndReviewsForm.innerHTML = `<p class="myRateAndReview-para"> التقييم والمراجعات </p>`;
 
 
     var myEmptyDiv = this.document.createElement("div");
@@ -581,7 +579,7 @@ if ((eval(`message${id}`)[`id${[num]}`].rates).length === 0){
 
     var myEmptyImage = this.document.createElement("img");
     myEmptyImage.classList.add("myEmptyImage");
-    myEmptyImage.src = "./Site/myImages/RateAndReviewsImages/No Chat History@3x (1).png"
+    myEmptyImage.src = "./Site/myImages/RateAndReviewsImages/No Chat History@3x (1).png";
 
     var myEmptyPara = this.document.createElement("p");
     myEmptyPara.classList.add("myEmptyPara");
@@ -594,8 +592,8 @@ if ((eval(`message${id}`)[`id${[num]}`].rates).length === 0){
     myRateAndReviewsForm.innerHTML += `<div class="addRateButton-btn addRateButton-btn1"> <img class="myAddRate-img" src="./Site/myImages/icon.png" /> </div>`
 
  }else {
-    myRateAndReviewsForm.innerHTML = ""
-    myRateAndReviewsForm.innerHTML = `<p class="myRateAndReview-para"> التقييم والمراجعات </p>`
+    myRateAndReviewsForm.innerHTML = "";
+    myRateAndReviewsForm.innerHTML = `<p class="myRateAndReview-para"> التقييم والمراجعات </p>`;
     // if there are commnents and rates
     for (let i = 0; i < Object.keys(eval(`message${id}`)[`id${[num]}`].rates).length ; i++){
 
@@ -615,7 +613,7 @@ if ((eval(`message${id}`)[`id${[num]}`].rates).length === 0){
     
     // Create the <Content> element and add it to <Upper>
     var contentElement = document.createElement("div");
-    contentElement.classList.add("myContentDiv")
+    contentElement.classList.add("myContentDiv");
     upperElement.appendChild(contentElement);
     
     // Create the <Right> element and add it to <Content>
@@ -668,19 +666,19 @@ if ((eval(`message${id}`)[`id${[num]}`].rates).length === 0){
 
     // Create the <Lower> element
     var lowerElement = document.createElement("div");
-    lowerElement.classList.add("myLowerContent-div")
+    lowerElement.classList.add("myLowerContent-div");
         
     // Create the <p> element and add it to <Lower>
     var pElement = document.createElement('p');
     pElement.classList.add("myRaterComment-para");
-    pElement.innerHTML = eval(`message${id}`)[`id${[num]}`].rates[`id${i}`].raterComment
+    pElement.innerHTML = eval(`message${id}`)[`id${[num]}`].rates[`id${i}`].raterComment;
     lowerElement.appendChild(pElement);
         
     // Append <Upper> and <Lower> to <Outer>
     outerElement.appendChild(upperElement);
     outerElement.appendChild(lowerElement);
         
-    myRateAndReviewsForm.appendChild(outerElement)               
+    myRateAndReviewsForm.appendChild(outerElement);           
 
     if (i === 0){
     myRateAndReviewsForm.innerHTML += `
