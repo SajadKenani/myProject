@@ -247,7 +247,7 @@ addEventListener("DOMContentLoaded", function() {
     myLowerRightPara.addEventListener("click", function(event) {
         event.preventDefault();
         // Go to sign in page (whole different page)
-        window.location.replace("/SignIn.html")
+        window.location.replace("/signIn.html")
     })
 })
 
