@@ -135,7 +135,8 @@ let message1
 let mainMessage
 let accounts
 
-// Fetch and parse the HTML data as before
+// Fetch and parse the HTML data as before.
+    
 fetch("./Site/MyData.html")
     .then(response => response.text())
     .then(data => {
