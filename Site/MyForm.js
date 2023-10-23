@@ -284,11 +284,11 @@ let show0 = true
 this.document.querySelector(".myShowPasswordButton-btn0").addEventListener("click", () => {
 if (show0){
  this.document.getElementById("password0").type = ""
- this.document.getElementById("myPasswordImage-img0").src = "/Site/myImages/Svg/eye_svgrepo.com.png"
+ this.document.getElementById("myPasswordImage-img0").src = "./Site/myImages/Svg/eye_svgrepo.com.png"
  show0 = false
 }else {
  this.document.getElementById("password0").type = "password";
- this.document.getElementById("myPasswordImage-img0").src = "/Site/myImages/Svg/eye-closed_svgrepo.com.png"
+ this.document.getElementById("myPasswordImage-img0").src = "./Site/myImages/Svg/eye-closed_svgrepo.com.png"
  show0 = true
 }
 })
@@ -297,11 +297,11 @@ let show1 = true
  this.document.querySelector(".myShowPasswordButton-btn1").addEventListener("click", () => {
    if (show1){
      this.document.getElementById("password1").type = ""
-     this.document.getElementById("myPasswordImage-img1").src = "/Site/myImages/Svg/eye_svgrepo.com.png"
+     this.document.getElementById("myPasswordImage-img1").src = "./Site/myImages/Svg/eye_svgrepo.com.png"
      show1 = false
    }else {
      this.document.getElementById("password1").type = "password";
-     this.document.getElementById("myPasswordImage-img1").src = "/Site/myImages/Svg/eye-closed_svgrepo.com.png"
+     this.document.getElementById("myPasswordImage-img1").src = "./Site/myImages/Svg/eye-closed_svgrepo.com.png"
      show1 = true
    }
  })
@@ -310,11 +310,11 @@ let show2 = true
 this.document.querySelector(".myShowPasswordButton-btn2").addEventListener("click", () => {
 if (show2){
  this.document.getElementById("password2").type = ""
- this.document.getElementById("myPasswordImage-img2").src = "/Site/myImages/Svg/eye_svgrepo.com.png"
+ this.document.getElementById("myPasswordImage-img2").src = "./Site/myImages/Svg/eye_svgrepo.com.png"
  show2 = false
 }else {
  this.document.getElementById("password2").type = "password";
- this.document.getElementById("myPasswordImage-img2").src = "/Site/myImages/Svg/eye-closed_svgrepo.com.png"
+ this.document.getElementById("myPasswordImage-img2").src = "./Site/myImages/Svg/eye-closed_svgrepo.com.png"
  show2 = true
 }
 })
@@ -323,11 +323,11 @@ let show3 = true
 this.document.querySelector(".myShowPasswordButton-btn3").addEventListener("click", () => {
 if (show3){
  this.document.getElementById("password3").type = ""
- this.document.getElementById("myPasswordImage-img3").src = "/Site/myImages/Svg/eye_svgrepo.com.png"
+ this.document.getElementById("myPasswordImage-img3").src = "./Site/myImages/Svg/eye_svgrepo.com.png"
  show3 = false
 }else {
  this.document.getElementById("password3").type = "password";
- this.document.getElementById("myPasswordImage-img3").src = "/Site/myImages/Svg/eye-closed_svgrepo.com.png"
+ this.document.getElementById("myPasswordImage-img3").src = "./Site/myImages/Svg/eye-closed_svgrepo.com.png"
  show3 = true
 }
 })
@@ -399,12 +399,12 @@ this.document.getElementById("mySaveInfoButton").addEventListener("click", () =>
 
     this.document.querySelector(".myShowPasswordButton-btn0").addEventListener("click", () => {
         if (showMyPassword === true){
-            this.document.getElementById("myPasswordImage-img0").src = "/Site/myImages/Svg/eye_svgrepo.com.png"
+            this.document.getElementById("myPasswordImage-img0").src = "./Site/myImages/Svg/eye_svgrepo.com.png"
             this.document.getElementById("password0").type = ""
             showMyPassword = false;
 
         }else if (showMyPassword === false){
-            this.document.getElementById("myPasswordImage-img0").src = "/Site/myImages/Svg/eye-closed_svgrepo.com.png"
+            this.document.getElementById("myPasswordImage-img0").src = "./Site/myImages/Svg/eye-closed_svgrepo.com.png"
             this.document.getElementById("password0").type = "password"
             showMyPassword = true;
             
