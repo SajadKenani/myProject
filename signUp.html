@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Tajawal' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+
+    <link href="/Site/main.css" rel="stylesheet">
+    <link href="/Site/signUpForm.css" rel="stylesheet">
+
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <!-- Background section -->
+  <div class="myUpperMainDiv-div"></div>
+  <div class="myTraingularMainDiv-div"></div>
+  
+  <div class="OuterTraingular-div">
+       <div class="innterTraingular-div"></div>
+       <div class="innterSecondaryTraingular-div"></div>
+  </div>
+  <div class="myLowerMainDiv-div">
+
+<!-- Content Section -->
+
+  
+    <div class="myOuterImage-div"><img class="myMainLogo-img" src="/Site/myImages/Svg/Icon.png"> </img> </div>
+    <div class="myOuterPara-div"><p class="myMainPara-para">Dhad</p></div>
+
+<form class="formEmail ">
+    
+    <div class="middlePart-div">
+        <p class="myMiddleMainPara-para">انشاء حساب</p>
+        <p class="myMiddlePara-para">انضم إلينا اليوم واحصل على إمكانية الوصول إلى موارد البحث المميزة</p>
+        
+        <div class="myMainMiddleField-div">
+  
+        <p class="myNamePara-para">الاسم الكامل</p>
+        <input class="myNameInput-input " type="text" placeholder="ادخل اسمك" ></input>  
+         <!-- Users Info Errors -->
+        <p class="myPasswordWarning-para hiddenError" id="NameExistanceError"> لايمكن ترك الحقل فارغ </p>
+        
+        
+        <p class="myNamePara-para">البريد الالكتروني</p>
+        <input class="myEmailInput-input " type="email" placeholder="you@example.com" ></input> 
+        
+        <!-- Users Info Errors -->
+        <p class="myPasswordWarning-para hiddenError" id="emailExistanceError"> لايمكن ترك الحقل فارغ </p>
+        <p class="myPasswordError-para hiddenError" id="emailLengthError"> يرجى ادخال بريد الكتروني ملائم </p>
+  
+        <button class="myButton-btn"> متابعة </button>
+  
+        <div class="lowerSection-div">
+            <p class="myLowerRightPara-para">تسجيل الدخول</p>
+            <p class="myLowerLeftPara-para">لديك حساب بالفعل؟</p>
+        </div>
+  
+        </div>
+    </div>
+      
+</form>
+
+<form class="formPassword form--hidden">
+ 
+    <div class="middlePart-div">
+        <p class="myMiddleMainPara-para">!اهلا بك</p>
+        <p class="myMiddlePara-para">يُرجى إنشاء كلمة مرور قوية لحماية حسابك </p>
+        
+        <div class="myMainMiddleField-div">
+  
+        <p class="myNamePara-para">كلمة المرور</p>
+        <div style="display: flex;">
+            <button class="myShowPasswordButton-btn"> 
+                <img id="myPasswordImage-img" style="width: 25px; margin-top: 7px;" src="/Site/myImages/svg/eye-closed_svgrepo.com.png" /> 
+            </button>
+            <input class="myPasswordInput-input myPasswordInput-input2 " type="password" placeholder="كلمة المرور" required></input>
+        </div>
+
+        <p class="myPasswordWarning-para hiddenError" id="passwordExistanceError"> لايمكن ترك الحقل فارغ </p>
+        <p class="myPasswordError-para hiddenError" id="passwordLengthError"> يرجى ادخال كلمة مرور ملائمة </p>
+  
+        <p class="myNamePara-para">تأكيد كلمة المرور</p>
+
+        <div style="display: flex;">
+            <button class="myShowPasswordButton-btn myShowPasswordButton-btn2"> 
+                <img id="myPasswordImage-img2" style="width: 25px; margin-top: 7px;" src="/Site/myImages/svg/eye-closed_svgrepo.com.png" /> 
+            </button>
+            <input class="myVerifiedPasswordInput-input " type="password" placeholder="كلمة المرور"  required></input>
+        </div>
+        <p class="myPasswordError-para hiddenError" id="passwordCheckedError"> كلمة المرور غير مطابقة </p>
+        <p class="myPasswordWarning-para hiddenError" id="passwordCheckedExistanceError"> لايمكن ترك الحقل فارغ </p>
+  
+        <button class="mySubmitButton-btn"> انشاء حساب </button>
+  
+        </div>
+      </div>
+</form>
+</div>
+    <script src="/Site/SignUp.js"></script>
+
+</body>
+</html>
