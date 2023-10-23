@@ -444,7 +444,7 @@ for (let section = 0; section < 2; section++){
         // Create the <img> element with class "myStartsImage-img" and src attribute
         const imgElement = document.createElement('img');
         imgElement.className = 'myStartsImage-img';
-        imgElement.src = 'Site/myImages/Star.png';
+        imgElement.src = './Site/myImages/Star.png';
         imgElement.title = 'arab'; // Set the title attribute
 
         
@@ -461,7 +461,7 @@ for (let section = 0; section < 2; section++){
 
         // setting the contents of purchased button
         myPurchasedButton.innerHTML = `
-        <img class="myButtonBagImage" src="/Site/myImages/CardMoreInfoImg/Bag.png" />`
+        <img class="myButtonBagImage" src="./Site/myImages/CardMoreInfoImg/Bag.png" />`
         + eval(`message${id}`)[`id${[num]}`].cardPrice;
 
         myCardImage.classList.add("myCardImage-img");
@@ -501,7 +501,7 @@ const myRateAndReviews = (num, id) => {
         let myStar = document.createElement("img");
         myStar.classList.add("myMiniStar");
         myStar.id = `star-${i}`;
-        myStar.src = "/Site/myImages/RateAndReviewsImages/hiddenBorderStar.png";
+        myStar.src = "./Site/myImages/RateAndReviewsImages/hiddenBorderStar.png";
         myStarsDiv.appendChild(myStar);
     }
 
@@ -529,7 +529,7 @@ const myRateAndReviews = (num, id) => {
             starElement.addEventListener("click", (event) => {
             const clickedIndex = Number(event.target.id.split('-')[1]);
             for (let k = 0; k <= clickedIndex; k++) {
-            document.getElementById(`star-${k}`).src = "/Site/myImages/Star.png";
+            document.getElementById(`star-${k}`).src = "./Site/myImages/Star.png";
             // Get a reference to myStarsDiv
             const myStarsDiv = document.getElementById('myStarsDiv');
             if (myRaterStars && myStarsDiv) {
@@ -540,7 +540,7 @@ const myRateAndReviews = (num, id) => {
             if (k === clickedIndex){
                 for (let s = k; s < 5; s++){
                 if (s < 4){
-                document.getElementById(`star-${s + 1}`).src = "/Site/myImages/RateAndReviewsImages/hiddenBorderStar.png";
+                document.getElementById(`star-${s + 1}`).src = "./Site/myImages/RateAndReviewsImages/hiddenBorderStar.png";
                 myRaterFinalRate = (clickedIndex + 1)} 
                 }          
             }
@@ -581,7 +581,7 @@ if ((eval(`message${id}`)[`id${[num]}`].rates).length === 0){
 
     var myEmptyImage = this.document.createElement("img");
     myEmptyImage.classList.add("myEmptyImage");
-    myEmptyImage.src = "myImages/RateAndReviewsImages/No Chat History@3x (1).png"
+    myEmptyImage.src = "./Site/myImages/RateAndReviewsImages/No Chat History@3x (1).png"
 
     var myEmptyPara = this.document.createElement("p");
     myEmptyPara.classList.add("myEmptyPara");
@@ -591,7 +591,7 @@ if ((eval(`message${id}`)[`id${[num]}`].rates).length === 0){
     myEmptyDiv.appendChild(myEmptyPara);
 
     myRateAndReviewsForm.appendChild(myEmptyDiv);
-    myRateAndReviewsForm.innerHTML += `<div class="addRateButton-btn addRateButton-btn1"> <img class="myAddRate-img" src="/Frontend/src/HomePage/myImages/icon.png" /> </div>`
+    myRateAndReviewsForm.innerHTML += `<div class="addRateButton-btn addRateButton-btn1"> <img class="myAddRate-img" src="./Site/myImages/icon.png" /> </div>`
 
  }else {
     myRateAndReviewsForm.innerHTML = ""
@@ -644,7 +644,7 @@ if ((eval(`message${id}`)[`id${[num]}`].rates).length === 0){
     
         // Set the star image based on the rater's rate
         starElement.src = (j < eval(`message${id}`)[`id${[num]}`].rates[`id${i}`].raterRate) ? 
-        "/Site/myImages/Star.png" : "/Site/myImages/RateAndReviewsImages/hiddenStar.png";
+        "/Site/myImages/Star.png" : "./Site/myImages/RateAndReviewsImages/hiddenStar.png";
     
         // Append the star element to the array
         starImages.push(starElement);
@@ -685,7 +685,7 @@ if ((eval(`message${id}`)[`id${[num]}`].rates).length === 0){
     if (i === 0){
     myRateAndReviewsForm.innerHTML += `
     <div class="addRateButton-btn addRateButton-btn1"> 
-        <img class="myAddRate-img" src="/Site/myImages/icon.png" /> 
+        <img class="myAddRate-img" src="./Site/myImages/icon.png" /> 
     </div>`
     }         
 }
